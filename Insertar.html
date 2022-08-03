@@ -1,0 +1,58 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<meta charset="utf-8">
+	<meta http-equiv="X-UA-Compatible" content="IE=edge">
+	<meta name="viewport" content="width=device-width, initial-scale=1">
+
+	<title>Divisas</title>
+	<link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Open+Sans:300,400"> 
+	<link rel="stylesheet" href="css/fontawesome-all.min.css">
+	<link rel="stylesheet" href="css/bootstrap.min.css">
+	<link rel="stylesheet" type="text/css" href="css/magnific-popup.css"/>
+	<link rel="stylesheet" type="text/css" href="slick/slick.css"/>
+	<link rel="stylesheet" type="text/css" href="slick/slick-theme.css"/>
+	<link rel="stylesheet" href="css/tooplate-style.css">
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/bootstrap-sweetalert/1.0.1/sweetalert.js" type="text/javascript"></script>
+	<link href="https://cdnjs.cloudflare.com/ajax/libs/bootstrap-sweetalert/1.0.1/sweetalert.css"rel="stylesheet" />
+    
+	<script>
+		var renderPage = true;
+
+	if(navigator.userAgent.indexOf('MSIE')!==-1
+		|| navigator.appVersion.indexOf('Trident/') > 0){
+   		alert("Vea esto en un navegador moderno como Chrome o Microsoft Edge.");
+   		renderPage = false;
+	}
+	</script>
+</head>
+
+<body class="body_insertar">
+   
+    <div class="col-xl-9 col-lg-8 col-md-12 col-sm-12 tm-content" >
+        <div class="insertar">
+
+            <div class="tm-bg-transparent-black tm-contact-box-pad">
+                <h2>Insertar Pais </h2> <br>
+                <form name="FrmInsertar" action="Insertar.php" method="post">
+                    Nombre Pais: <input  type="text"  name="txtnombrep" class="form-control" size="10" placeholder="Pais"><br>
+                    Nombre Moneda: <input class="form-control" type="text" name="txtnombreM" size="10" placeholder="Moneda"><br>
+                    Valor en Dolares: <input class="form-control" type="text" name="txtusd" size="10" placeholder="USD" ><br>
+                    Valor Local: <input class="form-control" type="text" name="txtlocal" size="10" placeholder="Local"><br>
+                    <br>
+                    <input class="btn tm-btn tm-font-big"  type="submit" value="Insertar Nuevo Registro">
+                    <br>
+                    <br>
+                    <a href="index.html" class="btn tm-btn tm-font-big">Cancelar</a>
+                </form>
+               
+            </div>
+           
+
+        </div>
+    </div>
+	
+    
+
+</body>
+</html>
